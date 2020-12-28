@@ -40,6 +40,21 @@ namespace xpm
                     case "-Syu":
                         Utils.Package.UpdateAll();
                         break;
+
+                    case "-Ce": /* Create env var in xpm.exe dir */
+                        Console.Write(Utils.Config.messageStart + " Creating path variable\n");
+                        var currentValue = Environment.GetEnvironmentVariable("Path", EnvironmentVariableTarget.User);
+                        var newValue = currentValue + @";" + Environment.CurrentDirectory;
+                        Environment.SetEnvironmentVariable("Path", newValue, EnvironmentVariableTarget.User);
+                        Console.WriteLine(Utils.Config.messageStart + " Done");
+                        break;
+                    case "-Re": /* Remove env var */
+                        Console.Write(Utils.Config.messageStart + " Removing path variable\n");
+                        var currentValue2 = Environment.GetEnvironmentVariable("Path", EnvironmentVariableTarget.User);
+                        var newValue2 = currentValue2.Replace(@";" + Environment.CurrentDirectory, string.Empty);
+                        Environment.SetEnvironmentVariable("Path", newValue2, EnvironmentVariableTarget.User);
+                        Console.WriteLine(Utils.Config.messageStart + " Done");
+                        break;
                 }
             }
             else

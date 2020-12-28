@@ -3,7 +3,7 @@
  - A PC with Windows installed.
  - Git installed
  - A working internet connection (duh)
- - Ensure you have windows 10 sdk installed, and the `Framework` directory in your path
+ - Visual studio 2019
 ## Installation:
  - Open a git bash terminal and clone the repository: `git clone https://github.com/xsucculentx/xpm`
  - Navigate to the folder using a GUI or the terminal `cd ./xpm/`

@@ -1,0 +1,16 @@
+C:\Users\lookas\Desktop\xpm\xpm\bin\Debug\xpm.exe.config
+C:\Users\lookas\Desktop\xpm\xpm\bin\Debug\xpm.exe
+C:\Users\lookas\Desktop\xpm\xpm\bin\Debug\xpm.pdb
+C:\Users\lookas\Desktop\xpm\xpm\obj\Debug\xpm.csprojAssemblyReference.cache
+C:\Users\lookas\Desktop\xpm\xpm\obj\Debug\xpm.csproj.CoreCompileInputs.cache
+C:\Users\lookas\Desktop\xpm\xpm\obj\Debug\xpm.exe
+C:\Users\lookas\Desktop\xpm\xpm\obj\Debug\xpm.pdb
+C:\Users\user\Desktop\xpm\xpm\bin\Debug\xpm.exe.config
+C:\Users\user\Desktop\xpm\xpm\bin\Debug\xpm.exe
+C:\Users\user\Desktop\xpm\xpm\bin\Debug\xpm.pdb
+C:\Users\user\Desktop\xpm\xpm\obj\Debug\xpm.csprojAssemblyReference.cache
+C:\Users\user\Desktop\xpm\xpm\obj\Debug\xpm.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\xpm\xpm\obj\Debug\xpm.exe
+C:\Users\user\Desktop\xpm\xpm\obj\Debug\xpm.pdb
+C:\Users\user\Desktop\xpm\xpm\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\user\Desktop\xpm\xpm\obj\Debug\xpm.csproj.ResolveComReference.cache

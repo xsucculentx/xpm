@@ -125,25 +125,25 @@ namespace xpm.Utils
         {
             if (e.ProgressPercentage != 100)
             {
-                if (e.ProgressPercentage == 5) { progressBar = " [#-------------------] "; }
-                if (e.ProgressPercentage == 10) { progressBar = " [##------------------] "; }
-                if (e.ProgressPercentage == 15) { progressBar = " [###-----------------] "; }
-                if (e.ProgressPercentage == 20) { progressBar = " [####----------------] "; }
-                if (e.ProgressPercentage == 25) { progressBar = " [#####---------------] "; }
-                if (e.ProgressPercentage == 30) { progressBar = " [######--------------] "; }
-                if (e.ProgressPercentage == 35) { progressBar = " [#######-------------] "; }
-                if (e.ProgressPercentage == 40) { progressBar = " [########------------] "; }
-                if (e.ProgressPercentage == 45) { progressBar = " [#########-----------] "; }
-                if (e.ProgressPercentage == 50) { progressBar = " [##########----------] "; }
-                if (e.ProgressPercentage == 55) { progressBar = " [###########---------] "; }
-                if (e.ProgressPercentage == 60) { progressBar = " [############--------] "; }
-                if (e.ProgressPercentage == 65) { progressBar = " [#############-------] "; }
-                if (e.ProgressPercentage == 70) { progressBar = " [##############------] "; }
-                if (e.ProgressPercentage == 75) { progressBar = " [###############-----] "; }
-                if (e.ProgressPercentage == 80) { progressBar = " [################----] "; }
-                if (e.ProgressPercentage == 85) { progressBar = " [#################---] "; }
-                if (e.ProgressPercentage == 90) { progressBar = " [##################--] "; }
-                if (e.ProgressPercentage == 95) { progressBar = " [####################] "; }
+                if (e.ProgressPercentage == 5)  { progressBar = " [" + Config.downloadTail + "-------------------] "; }
+                if (e.ProgressPercentage == 10) { progressBar = " [#" + Config.downloadTail + "------------------] "; }
+                if (e.ProgressPercentage == 15) { progressBar = " [##" + Config.downloadTail + "-----------------] "; }
+                if (e.ProgressPercentage == 20) { progressBar = " [###" + Config.downloadTail + "----------------] "; }
+                if (e.ProgressPercentage == 25) { progressBar = " [####" + Config.downloadTail + "---------------] "; }
+                if (e.ProgressPercentage == 30) { progressBar = " [#####" + Config.downloadTail + "--------------] "; }
+                if (e.ProgressPercentage == 35) { progressBar = " [######" + Config.downloadTail + "-------------] "; }
+                if (e.ProgressPercentage == 40) { progressBar = " [#######" + Config.downloadTail + "------------] "; }
+                if (e.ProgressPercentage == 45) { progressBar = " [########" + Config.downloadTail + "-----------] "; }
+                if (e.ProgressPercentage == 50) { progressBar = " [#########" + Config.downloadTail + "----------] "; }
+                if (e.ProgressPercentage == 55) { progressBar = " [##########" + Config.downloadTail + "---------] "; }
+                if (e.ProgressPercentage == 60) { progressBar = " [###########" + Config.downloadTail + "--------] "; }
+                if (e.ProgressPercentage == 65) { progressBar = " [############" + Config.downloadTail + "-------] "; }
+                if (e.ProgressPercentage == 70) { progressBar = " [#############" + Config.downloadTail + "------] "; }
+                if (e.ProgressPercentage == 75) { progressBar = " [##############" + Config.downloadTail + "-----] "; }
+                if (e.ProgressPercentage == 80) { progressBar = " [###############" + Config.downloadTail + "----] "; }
+                if (e.ProgressPercentage == 85) { progressBar = " [################" + Config.downloadTail + "---] "; }
+                if (e.ProgressPercentage == 90) { progressBar = " [#################" + Config.downloadTail + "--] "; }
+                if (e.ProgressPercentage == 95) { progressBar = " [###################-] "; }
                 string fullProgressBar = "\r    " + progressBar + e.ProgressPercentage + "% " + currentFileDownloading;
                 Console.Write("\r" + fullProgressBar);
             }

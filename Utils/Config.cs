@@ -14,7 +14,7 @@ namespace xpm.Utils
         public static string installFolder = @"C:\Users\" + Environment.UserName + @"\xpm";
 
         public static string messageStart = ">>"; /* :: This shows when a message is displayed. */
-
+        public static char downloadTail = '>';/* [####>-----] */
         public static void Autostart() /* do this when program starts */
         {
         }

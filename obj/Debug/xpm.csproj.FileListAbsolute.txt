@@ -14,3 +14,11 @@ C:\Users\user\Desktop\xpm\xpm\obj\Debug\xpm.exe
 C:\Users\user\Desktop\xpm\xpm\obj\Debug\xpm.pdb
 C:\Users\user\Desktop\xpm\xpm\obj\Debug\Interop.IWshRuntimeLibrary.dll
 C:\Users\user\Desktop\xpm\xpm\obj\Debug\xpm.csproj.ResolveComReference.cache
+C:\Users\succulent\Documents\GitHub\xpm\bin\Debug\xpm.exe
+C:\Users\succulent\Documents\GitHub\xpm\bin\Debug\xpm.pdb
+C:\Users\succulent\Documents\GitHub\xpm\obj\Debug\xpm.csprojAssemblyReference.cache
+C:\Users\succulent\Documents\GitHub\xpm\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\succulent\Documents\GitHub\xpm\obj\Debug\xpm.csproj.ResolveComReference.cache
+C:\Users\succulent\Documents\GitHub\xpm\obj\Debug\xpm.csproj.CoreCompileInputs.cache
+C:\Users\succulent\Documents\GitHub\xpm\obj\Debug\xpm.exe
+C:\Users\succulent\Documents\GitHub\xpm\obj\Debug\xpm.pdb

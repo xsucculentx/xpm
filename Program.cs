@@ -6,7 +6,7 @@ namespace xpm
     {
         private static void Main(string[] args)
         {
-            string version = "v0.1-alpha";
+            string version = "v0.2-alpha";
             Console.WriteLine("xpm " + version + "\n");
             Utils.Extra.CheckInstall();
             Utils.Config.Autostart();

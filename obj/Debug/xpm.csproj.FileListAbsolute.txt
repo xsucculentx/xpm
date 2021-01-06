@@ -22,3 +22,6 @@ C:\Users\succulent\Documents\GitHub\xpm\obj\Debug\xpm.csproj.ResolveComReference
 C:\Users\succulent\Documents\GitHub\xpm\obj\Debug\xpm.csproj.CoreCompileInputs.cache
 C:\Users\succulent\Documents\GitHub\xpm\obj\Debug\xpm.exe
 C:\Users\succulent\Documents\GitHub\xpm\obj\Debug\xpm.pdb
+C:\Users\succulent\Documents\GitHub\xpm\bin\Debug\Newtonsoft.Json.dll
+C:\Users\succulent\Documents\GitHub\xpm\bin\Debug\Newtonsoft.Json.xml
+C:\Users\succulent\Documents\GitHub\xpm\obj\Debug\xpm.csproj.CopyComplete

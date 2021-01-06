@@ -41,6 +41,11 @@ namespace xpm
                         Utils.Package.UpdateAll();
                         break;
 
+                    case "-P":
+                        if (args.Length != 1) { Utils.Extra.ParsePKG(args[1], false); }
+                        else { Console.WriteLine("Please provide an argument."); }
+                        break;
+
                     case "-Ce": /* Create env var in xpm.exe dir */
                         Console.Write(Utils.Config.messageStart + " Creating path variable\n");
                         var currentValue = Environment.GetEnvironmentVariable("Path", EnvironmentVariableTarget.User);
@@ -48,6 +53,7 @@ namespace xpm
                         Environment.SetEnvironmentVariable("Path", newValue, EnvironmentVariableTarget.User);
                         Console.WriteLine(Utils.Config.messageStart + " Done");
                         break;
+
                     case "-Re": /* Remove env var */
                         Console.Write(Utils.Config.messageStart + " Removing path variable\n");
                         var currentValue2 = Environment.GetEnvironmentVariable("Path", EnvironmentVariableTarget.User);

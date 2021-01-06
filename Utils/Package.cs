@@ -20,7 +20,7 @@ namespace xpm.Utils
                         Console.WriteLine("     Removing program files");
                         Directory.Delete(Config.installFolder + @"\packages\" + query, true);
                         Console.WriteLine("     Removing start menu shortcut");
-                        File.Delete(@"C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\" + query + ".lnk");
+                        File.Delete(@"C:\Users\" + Environment.UserName + @"\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\" + query + ".lnk");
                         Console.WriteLine("     Removing path variable");
                         var currentValue = Environment.GetEnvironmentVariable("Path", EnvironmentVariableTarget.User);
                         var newValue = currentValue
@@ -67,9 +67,9 @@ namespace xpm.Utils
                         Extra.ParsePKG(Config.installFolder + @"\cache\" + lineSplit[0] + ".pkg", true);
                         Console.WriteLine(Config.messageStart + " Package Details");
                         Console.WriteLine("     Name: " + lineSplit[0]);
-                        Console.WriteLine("     Made by: " + Utils.Extra.METAAUTHOR);
-                        Console.WriteLine("     Desc: " + Extra.METADESC);
-                        Console.WriteLine("     License: " + Extra.METALICENSE);
+                        Console.WriteLine("     Made by: " + Utils.Extra.AUTHOR);
+                        Console.WriteLine("     Desc: " + Extra.DESC);
+                        Console.WriteLine("     License: " + Extra.LICENSE);
                         Console.Write(Config.messageStart + " Would you like to proceed? (y/n): ");
                         if (askYN)
                         {

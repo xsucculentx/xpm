@@ -4,8 +4,8 @@
   "Author": "don ho",
   "Maintainer": "succulent",
   "Description": "A Simple notepad replacement.",
-  "Version": 4.9,
+  "Version": 7.9,
   "License": "GPLv2",
-  "Hooks": "",
-  "MainEXE": ".\notepad++.exe"
+  "Hooks": "path-var(.\\)",
+  "MainEXE": ".\\notepad++.exe"
 }

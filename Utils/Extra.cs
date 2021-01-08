@@ -65,54 +65,6 @@ namespace xpm.Utils
                 LICENSE = pkg.License;
                 HOOKS = pkg.Hooks;
                 MAINEXE = pkg.MainEXE;
-
-                /*
-                    public string Build { get; set; }
-                    public string Name { get; set; }
-                    public string Author { get; set; }
-                    public string Maintainer { get; set; }
-                    public string Description { get; set; }
-                    public double Version { get; set; }
-                    public string License { get; set; }
-                    public string Hooks { get; set; }
-                    public string MainEXE { get; set; }
-                foreach (string line in fileData)
-                {
-                    if (!line.StartsWith("#"))
-                    {
-                        if (line.StartsWith("BUILD="))
-                        {
-                            BUILD = line.Substring(line.IndexOf('(') + 1, line.IndexOf(')') - line.IndexOf('(') - 1);
-                        }
-                        if (line.StartsWith("META-NAME="))
-                        {
-                            METANAME = line.Substring(line.IndexOf('(') + 1, line.IndexOf(')') - line.IndexOf('(') - 1);
-                        }
-                        if (line.StartsWith("META-AUTHOR="))
-                        {
-                            METAAUTHOR = line.Substring(line.IndexOf('(') + 1, line.IndexOf(')') - line.IndexOf('(') - 1);
-                        }
-                        if (line.StartsWith("META-DESC="))
-                        {
-                            METADESC = line.Substring(line.IndexOf('(') + 1, line.IndexOf(')') - line.IndexOf('(') - 1);
-                        }
-                        if (line.StartsWith("META-LICENSE="))
-                        {
-                            METALICENSE = line.Substring(line.IndexOf('(') + 1, line.IndexOf(')') - line.IndexOf('(') - 1);
-                        }
-                        if (line.StartsWith("HOOKS="))
-                        {
-                            HOOKS = line.Substring(line.IndexOf('(') + 1, line.IndexOf(')') - line.IndexOf('(') - 1);
-                        }
-                        if (line.StartsWith("ADD-ENV-VAR="))
-                        {
-                            var currentValue = Environment.GetEnvironmentVariable("Path", EnvironmentVariableTarget.User);
-                            var newValue = currentValue + @";" + line.Substring(line.IndexOf('(') + 1, line.IndexOf(')') - line.IndexOf('(') - 1).Replace(@".\", Config.installFolder + @"\packages\" + METANAME + @"\");
-                            Environment.SetEnvironmentVariable("Path", newValue, EnvironmentVariableTarget.User);
-                        }
-                    }
-                }
-                */
                 if (!gatherInfo)
                 {
                     currentFileDownloading = NAME;
@@ -138,11 +90,12 @@ namespace xpm.Utils
                     ZipFile.ExtractToDirectory(Config.installFolder + @"\packages\" + NAME + ".zip", Config.installFolder + @"\packages\" + NAME);
                     File.Delete(Config.installFolder + @"\cache\" + NAME + ".pkg");
                     File.Delete(Config.installFolder + @"\packages\" + NAME + ".zip");
-                    if (!HOOKS.Contains("skipstartmenu"))
+                    if (HOOKS.Contains("path-var"))
                     {
-                        CreateShortcut(NAME, @"C:\Users\" + Environment.UserName + @"\AppData\Roaming\Microsoft\Windows\Start Menu\Programs", Config.installFolder + @"\packages\" + NAME + @"\" + NAME + ".exe", DESC);
+                        var currentValue = Environment.GetEnvironmentVariable("Path", EnvironmentVariableTarget.User);
+                        var newValue = currentValue + @";" + HOOKS.Substring(HOOKS.IndexOf('(') + 1, HOOKS.IndexOf(')') - HOOKS.IndexOf('(') - 1).Replace(@".\", Config.installFolder + @"\packages\" + NAME + @"\");
+                        Environment.SetEnvironmentVariable("Path", newValue, EnvironmentVariableTarget.User);
                     }
-
                     Console.WriteLine("\r" + Config.messageStart + " Done");
                 }
             }

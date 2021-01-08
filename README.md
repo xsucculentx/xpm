@@ -1,16 +1,13 @@
 # Xpm - Getting started:
 ## Prerequisites:
  - A PC with Windows installed.
- - Git installed
  - A working internet connection (duh)
- - Visual studio 2019
 ## Installation:
- - Open a git bash terminal and clone the repository: `git clone https://github.com/xsucculentx/xpm`
- - Navigate to the folder using a GUI or the terminal `cd ./xpm/`
- - Type `build.bat` into the terminal
- - Copy `./xpm/bin/Debug/xpm.exe` to where ever you want to install the program. Please avoid administrator blocked directories.
- - Navigate to the directory `xpm.exe` is in with the terminal.
- - Type `xpm -Ce` to create the environment variable, and restart your shell (open another cmd)
+ - Download newest release
+ - Put the file where you want it to be installed. (Avoid admin blocked folders)
+ - Open a terminal in the same location of the file
+ - Use xpm
+ - TIP: In the passage below about usage, type `xpm -Ce` to use xpm anywhere on your computer.
 ## Usage:
 Ensure you have Xpm installed properly, then continue.
  - Installing a package: `xpm -S packagename`

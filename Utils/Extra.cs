@@ -36,7 +36,7 @@ namespace xpm.Utils
             }
         }
 
-        public static void ParsePKG(string file, bool gatherInfo) /* REMAKE WITH JSON METADATA */
+        public static void ParsePKG(string file, bool gatherInfo)
         {
             downloadComplete = false;
 
